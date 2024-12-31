@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d24exm7oriv22"]
+
+[ext_resource type="PackedScene" uid="uid://b7nujukk1hcnu" path="res://scenes/player.tscn" id="1_8jixn"]
+[ext_resource type="PackedScene" uid="uid://bijbopuxmssgs" path="res://scenes/tile_ground.tscn" id="1_8tdoc"]
+
+[node name="Game" type="Node2D"]
+
+[node name="TileGround" parent="." instance=ExtResource("1_8tdoc")]
+position = Vector2(8, -15)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-8, -32)
+zoom = Vector2(4, 4)
+
+[node name="Player" parent="." instance=ExtResource("1_8jixn")]
+position = Vector2(-4, 2)
